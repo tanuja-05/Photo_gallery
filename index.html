@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lightbox.css" />
+    <title>Gallery</title>
+    <style>
+        
+        .maingly{
+            display: grid;
+            grid-template-columns:auto auto auto;
+            grid-template-rows: repeat(2,350px);
+            grid-gap: 20px; 
+            justify-content: center;
+            margin: 10px;
+        }
+        img{
+            border-radius: 10px;
+        }
+        .item-1{
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item-1>img{
+             height: 350px;
+             width: 600px; 
+        }
+        .item-2{
+            grid-row-start:1 ;
+            grid-row-end: 2;
+        }
+        .item-2>img{
+            height: 600px;
+            width: 700px;
+        }
+        .item-3{
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item-3>img{
+            height: 350px;
+             width: 600px; 
+        }
+        .item-4{
+            margin-top: 10px;
+            grid-row-start:2;
+            grid-row-end:3;
+        }
+        .item-4>img{
+            width: 600px;
+            height: 600px;
+        }
+        .item-5{
+            margin-top: 250px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .item-5>img{
+            height: 350px;
+            width: 700px;
+        }
+        .item-6{
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .item-6>img{
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maingly">
+         <a data-lightbox="models" class="item item-1" href="https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><img src="https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></a>
+         <a data-lightbox="models" class="item item-2" href="https://images.pexels.com/photos/2365465/pexels-photo-2365465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><img src="https://images.pexels.com/photos/2365465/pexels-photo-2365465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></a>
+         <a data-lightbox="models" class="item item-3" href="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></a>
+         <a data-lightbox="models" class="item item-4" href="https://images.pexels.com/photos/3265456/pexels-photo-3265456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><img src="https://images.pexels.com/photos/3265456/pexels-photo-3265456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></a>
+         <a data-lightbox="models" class="item item-5" href="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></a>
+         <a data-lightbox="models" class="item item-6" href="https://images.pexels.com/photos/954929/pexels-photo-954929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"><img src="https://images.pexels.com/photos/954929/pexels-photo-954929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></a>
+    </div>
+    <script src="./lightbox-plus-jquery.js"></script>
+</body>
+</head>
